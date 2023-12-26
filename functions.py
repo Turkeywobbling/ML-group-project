@@ -1,3 +1,4 @@
+# imports
 import pandas as pd
 from scipy.io import arff
 import matplotlib.pyplot as plt
@@ -136,7 +137,6 @@ def knn_cv(X_train, y_train, X_test, y_test, k):
   return np.mean(f1_scores)
 
 # functions that extract features --------------------------------------------------------------------------------
-# function the calculate the statics of data
 # function the calculate the statics of data
 def transform_stats(df):
     stats = {'mean': [], 'median': [], 'mode': [], 'std': [], 'skew': [], 'kurt': []}
