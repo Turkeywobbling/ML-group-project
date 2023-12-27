@@ -11,7 +11,9 @@ Enhancing the initial performance, the original dataset achieved a KNN F1 score 
 
 ## Dataset
 
-The dataset consists of 50,000 instances, with each signal split into 10 ms segments over a time-series of length 600. There are 10 classes of varying flying insect species, with 5,000 instances for each: Aedes\_female, Aedes\_male, Fruit\_flies, House\_flies, Quinx\_female, Quinx\_male, Stigma\_female, Stigma\_male, Tarsalis\_female and Tarsalis\_male. Figure 1 depicts the behavior of each class by presenting the average of data points within each respective class. This graphical representation offers a concise overview of the class-specific trends and patterns, derived from the aggregated mean values of the data points.
+The dataset consists of 50,000 instances, with each signal split into 10 ms segments over a time-series of length 600. There are 10 classes of varying flying insect species, with 5,000 instances for each: 
+
+`Aedes\_female`, `Aedes\_male`, `Fruit\_flies`, `House\_flies`, `Quinx\_female`, `Quinx\_male`, `Stigma\_female`, `Stigma\_male`, `Tarsalis\_female` and `Tarsalis\_male`. 
 
 Average datapoint of each class:
 <p align="center">
