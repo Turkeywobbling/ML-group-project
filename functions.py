@@ -157,14 +157,14 @@ def calculate_fft(time_series):
     # add abs value to avoid imaginary numbers
     fft_result = np.fft.fft(time_series)
     # Get the power spectrum (magnitude of the FFT)
-    power_spectrum = np.abs(fft_result)
+    magnitude = np.abs(fft_result)
     # Generate frequency axis data
     frequency = np.fft.fftfreq(len(power_spectrum), d=1./sampling_rate)
     # Only take the positive frequencies
     positive_frequency = frequency[:len(frequency)//2]
     positive_power_spectrum = power_spectrum[:len(power_spectrum)//2]
 
-    return positive_frequency * positive_power_spectrum
+    return positive_frequency * magnitude
 
 
 # Short-time Fourier Transform Function - Temporal Integration (Highest Stats Features) (71.3% - cross-validation)
