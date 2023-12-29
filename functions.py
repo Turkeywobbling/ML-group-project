@@ -68,6 +68,14 @@ def prep(df1, df2):
 
     return x_train, y_train, x_test, y_test
 
+# all together
+def pre_features(ratio, data):
+    training, testing = split(ratio, data)
+    # split it into data and labels
+    X_train, y_train, X_test, y_test = prep(training, testing)
+    
+    return X_train, y_train, X_test, y_test
+
 # calculate the mean of each row
 def cal_mean_class(df):
     return df.iloc[:, :-1].mean().values
