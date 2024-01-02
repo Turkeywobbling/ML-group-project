@@ -98,7 +98,7 @@ Start the experiment with `main.ipynb` by using jupyter notebook.
 ## Project Structure
 - `./insects/` contains original datasets.
 - `./features/` contains all the extracted features.
-- `./Experiment_Features/` contains the model evaluation of all the extracted features.
+- `./Experiment_Features/` contains the model evaluation of all the extracted features as separate experiments.
 - `functions.py` contains all the used functions.
 - `feature extraction.ipynb` contains the process of feature engineering
 - `main.ipynb` the result of the programme, see above.
