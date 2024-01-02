@@ -20,7 +20,7 @@ Average datapoint of each class:
   <img src="https://github.com/Turkeywobbling/ML-group-project/assets/105172948/adfc1b23-f6d6-4dc1-ac03-9e8cf9775167" alt="classes", width="600">
 </p>
 
-## Code sturcture
+## Code structure
 
 ### Preprocessing
 
