@@ -176,7 +176,7 @@ def calculate_fft(time_series):
 
 
 # Short-time Fourier Transform Function - Temporal Integration (Highest Stats Features) (71.3% - cross-validation)
-def stft_features(signal):
+def temp_int(signal):
 
     X_flattened_list = []
     signal = np.array(signal)
@@ -192,7 +192,7 @@ def stft_features(signal):
     return X_flattened_list
 
 #Spectral Rolloff (F1 - 0.45)
-def stft_spectral_rolloff_features(signal):
+def spec_rollof(signal):
 
     X_flattened_list = []
     signal = np.array(signal)
@@ -218,7 +218,7 @@ def stft_spectral_rolloff_features(signal):
 
 
 # function to extract spectral density and frequencies
-def spec_features(input):
+def psd(input):
 
   fs = 6000 # Because our data is sampled every 10ms
 
