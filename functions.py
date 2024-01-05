@@ -144,6 +144,24 @@ def knn_cv(X_train, y_train, X_test, y_test, k):
 
   return np.mean(f1_scores)
 
+# for the best model
+def final_knn_cv(X_train, y_train, X_test, y_test, k, n, weight):
+  validation_X, validation_y, train_X, train_y = k_folds(X_train, y_train, k)
+
+  knn_classifier = KNeighborsClassifier(n_neighbors=n, weights=weight)
+  f1_scores = []
+  for i in range(k):
+    # Fit the classifier on the training set
+    knn_classifier.fit(train_X, train_y)
+
+    # Evaluate the classifier on the validation set
+    y_pred = knn_classifier.predict(validation_X)
+
+    # Evaluate the accuracy of the classifier
+    f1_scores.append(f1_score(validation_y, y_pred, average='weighted'))
+
+  return np.mean(f1_scores)
+
 # functions that extract features --------------------------------------------------------------------------------
 # function the calculate the statics of data
 def transform_stats(df):
